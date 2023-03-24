@@ -1,0 +1,20 @@
+NexiaSword:
+  Item:
+    Type: 'DIAMOND_SWORD'
+    Name: '&dNexia Sword'
+    Description:
+      - '&aA sword that can cut'
+      - '&abetween universes.'
+    Enchantments:
+      - Enchant: 'unbreaking'
+        Level: 5
+      - Enchant: 'sharpness'
+        Level: 5
+    HideEnchantments: true
+  Cost: 500
+
+Stick:
+  Item:
+    Type: 'STICK'
+    Name: 'test'
+  Cost: 1

@@ -1,0 +1,7 @@
+name: '${project.name}'
+description: '${project.description}}'
+version: '${project.version}'
+authors: [HeadMonitor]
+website: https://www.playnexia.net/
+main: net.nexia.xpshop.XPShop
+api-version: 1.13

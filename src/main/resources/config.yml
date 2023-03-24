@@ -1,0 +1,2 @@
+# MAIN SETTINGS
+CreateExampleFiles: true  # Set whether the example files should be recreated if deleted. (WARNING: These get replaced each time the server restarts.)
