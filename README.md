@@ -2,6 +2,8 @@
  <img src="https://user-images.githubusercontent.com/62361708/227724184-46950307-c0ed-41ac-a7cd-621601c1edb0.png" width=256>
 </div>
 
+Minecraft plugin that adds an XP Shop to the game where players can purchase items with XP.
+
 <div align="center">
  <img src="https://user-images.githubusercontent.com/62361708/225291005-6b6bf7df-50bf-48f6-acbe-d50772ee865a.png">
 </div>
