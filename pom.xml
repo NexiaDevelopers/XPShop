@@ -11,8 +11,7 @@
 
     <name>XPShop</name>
 
-    <description>Minecraft plugin that adds an XP Shop to the game where players can purchase items with XP.
-    </description>
+    <description>Minecraft plugin that adds an XP Shop to the game where players can purchase items with XP.</description>
     <properties>
         <java.version>1.8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -100,7 +99,7 @@
         <dependency>
             <groupId>com.github.NexiaDevelopers</groupId>
             <artifactId>NexiaAPI</artifactId>
-            <version>7bdbf36397</version>
+            <version>1f1ed31bdb</version>
         </dependency>
 
         <dependency>

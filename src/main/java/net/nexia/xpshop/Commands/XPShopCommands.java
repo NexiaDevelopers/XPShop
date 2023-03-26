@@ -4,6 +4,7 @@ import co.aikar.commands.BaseCommand;
 import co.aikar.commands.annotation.CommandAlias;
 import co.aikar.commands.annotation.Default;
 import co.aikar.commands.annotation.Subcommand;
+import net.nexia.nexiaapi.ItemsFromFile;
 import net.nexia.xpshop.GUI.XPShopGUI;
 import org.bukkit.entity.Player;
 
@@ -26,7 +27,7 @@ public class XPShopCommands extends BaseCommand
     }
 
     @Subcommand("buy")
-    private void onBuySubcommand()
+    private void onBuySubcommand(Player player)
     {
 
     }
