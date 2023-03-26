@@ -65,16 +65,23 @@ public class XPShopGUIButton
                     {
                         int j = 0;
 
-                        while (remainingXP >= 0 && j < 64)
+                        if (playerGamemode != GameMode.CREATIVE)
                         {
-                            if (playerGamemode != GameMode.CREATIVE)
+                            while (remainingXP >= 0 && j < 64)
+                            {
                                 player.setLevel(remainingXP);
 
-                            Processes.giveToPlayer(player, clickedItem);
+                                Processes.giveToPlayer(player, clickedItem);
 
-                            currentLevel = player.getLevel();
-                            remainingXP = currentLevel - itemCost;
-                            j++;
+                                currentLevel = player.getLevel();
+                                remainingXP = currentLevel - itemCost;
+                                j++;
+                            }
+                        }
+                        else
+                        {
+                            for (int i = 0; i < 64; i++)
+                                Processes.giveToPlayer(player, clickedItem);
                         }
                     }
 

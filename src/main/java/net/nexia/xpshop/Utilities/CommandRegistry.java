@@ -13,7 +13,7 @@ public class CommandRegistry
     public CommandRegistry(JavaPlugin plugin)
     {
         BukkitCommandManager manager = new BukkitCommandManager(plugin);
-        manager.registerCommand(new XPShopCommands());
+        manager.registerCommand(new XPShopCommands(manager));
     }
 
 }

@@ -1,2 +1,10 @@
 # MAIN SETTINGS
-CreateExampleFiles: true  # Set whether the example files should be recreated if deleted. (WARNING: These get replaced each time the server restarts.)
+CreateExampleFiles: true    # Set whether the example files should be recreated if deleted. (WARNING: These get replaced each time the server restarts.)
+PermissionBasedShop: false  # Set whether the shop should be permission based. Each item will require a permission in the syntax `net.nexia.xpshop.item`
+
+#   __  ______  ____  _
+#   \ \/ /  _ \/ ___|| |__   ___  _ __
+#    \  /| |_) \___ \| '_ \ / _ \| '_ \
+#    /  \|  __/ ___) | | | | (_) | |_) |
+#   /_/\_\_|   |____/|_| |_|\___/| .__/
+#                                |_|

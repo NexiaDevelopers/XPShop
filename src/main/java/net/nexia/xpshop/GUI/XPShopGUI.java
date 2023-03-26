@@ -36,7 +36,6 @@ public class XPShopGUI
         //GUI Creation
         SGMenu xpShop = spiGUI.create("&6&lXPShop &f&6Page {currentPage}/{maxPage}", 5);
 
-        //Button
         File[] itemFiles = FileSetup.xpShopItemsFolder.listFiles();
 
         //No Items Setup

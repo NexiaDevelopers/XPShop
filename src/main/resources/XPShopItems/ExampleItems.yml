@@ -11,6 +11,7 @@ NexiaSword:
       - FIRE_ASPECT: 1
     ItemFlags:
       - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
   Cost: 60
 
 Stick:
