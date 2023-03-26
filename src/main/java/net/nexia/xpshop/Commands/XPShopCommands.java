@@ -73,7 +73,7 @@ public class XPShopCommands extends BaseCommand
                     {
                         if (Integer.parseInt(args[1]) > 6400)
                         {
-                            player.sendMessage(Processes.color("&cCan't give more than 6400 of &f[" + args[0] + "]"));
+                            player.sendMessage(Processes.color("&cCan't give more than 6400 of &f[" + args[0] + "]&c."));
                             return;
                         }
 
@@ -106,7 +106,7 @@ public class XPShopCommands extends BaseCommand
                     else
                     {
                         for (int i = 0; i < amountToBuy; i++)
-                            Processes.giveToPlayer(player, item);
+                            player.getInventory().addItem(item);
                     }
 
                     xpShopGUIEffects.successfullyPurchased(player);
