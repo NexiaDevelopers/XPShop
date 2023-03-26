@@ -12,6 +12,11 @@ Developed by [HeadMonitor](https://github.com/HeadMonitor) for the [Nexia Networ
  <img src="https://user-images.githubusercontent.com/62361708/225291005-6b6bf7df-50bf-48f6-acbe-d50772ee865a.png">
 </div>
 
+Just place the .jar file in your plugins folder and the plugin should work! Easy as that! After that you can configure the the plugin from the `config.yml` to your needs.
+
+- Every Section in every File in the `XPShopItems/` folder represents an item for sale. Each file's format should match that of the `ExampleItems.yml` file. There can be as
+many Sections in each File. We recommend grouping the items in each file by type.
+
 <div align="center">
  <img src="https://user-images.githubusercontent.com/62361708/225288203-3f8324f9-5a02-4156-9159-b13429466559.png">
 </div>
