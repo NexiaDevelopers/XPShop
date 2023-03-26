@@ -4,6 +4,10 @@
 
 Minecraft plugin that adds an XP Shop to the game where players can purchase items with XP.
 
+Uses [NexiaAPI](https://github.com/NexiaDevelopers/NexiaAPI), [ACF](https://github.com/aikar/commands) and [SpiGUI](https://github.com/SamJakob/SpiGUI).
+
+Developed by [HeadMonitor](https://github.com/HeadMonitor) for the [Nexia Network](https://www.playnexia.net/).
+
 <div align="center">
  <img src="https://user-images.githubusercontent.com/62361708/225291005-6b6bf7df-50bf-48f6-acbe-d50772ee865a.png">
 </div>
