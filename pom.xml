@@ -99,7 +99,7 @@
         <dependency>
             <groupId>com.github.NexiaDevelopers</groupId>
             <artifactId>NexiaAPI</artifactId>
-            <version>1f1ed31bdb</version>
+            <version>1fc28f5254</version>
         </dependency>
 
         <dependency>

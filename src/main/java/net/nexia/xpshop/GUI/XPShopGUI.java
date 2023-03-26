@@ -5,7 +5,6 @@ import com.samjakob.spigui.SpiGUI;
 import net.nexia.nexiaapi.ItemsFromFile;
 import net.nexia.nexiaapi.Processes;
 import net.nexia.xpshop.GUI.Other.XPShopGUIButton;
-import net.nexia.xpshop.GUI.Other.XPShopGUIEffects;
 import net.nexia.xpshop.Utilities.FileSetup;
 import net.nexia.xpshop.XPShop;
 import org.bukkit.Bukkit;
