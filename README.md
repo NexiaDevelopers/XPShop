@@ -26,6 +26,23 @@ Minecraft plugin that adds an XP Shop to the game where players can purchase ite
  <img src="https://user-images.githubusercontent.com/62361708/225288387-3b514380-63ec-467d-95c0-c0ebd76105ac.png">
 </div>
 
+<details>
+<summary>config.yml</summary>
+<pre>
+
+    # MAIN SETTINGS
+    CreateExampleFiles: true    # Set whether the example files should be recreated if deleted. (WARNING: These get replaced each time the server restarts.)
+    PermissionBasedShop: false  # Set whether the shop should be permission based. Each item will require a permission in the syntax `net.nexia.xpshop.item`
+
+    #   __  ______  ____  _
+    #   \ \/ /  _ \/ ___|| |__   ___  _ __
+    #    \  /| |_) \___ \| '_ \ / _ \| '_ \
+    #    /  \|  __/ ___) | | | | (_) | |_) |
+    #   /_/\_\_|   |____/|_| |_|\___/| .__/
+    #                                |_|
+</pre>
+</details>
+
 <div align="center">
  <img src="https://user-images.githubusercontent.com/62361708/225434090-dce1fb3c-9ff6-43e9-80c3-76ac800ad7f5.png">
 </div>
