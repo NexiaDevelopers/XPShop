@@ -9,6 +9,10 @@ Uses [NexiaAPI](https://github.com/NexiaDevelopers/NexiaAPI), [ACF](https://gith
 Developed by [HeadMonitor](https://github.com/HeadMonitor) for the [Nexia Network](https://www.playnexia.net/).
 
 <div align="center">
+ <img src="https://user-images.githubusercontent.com/62361708/227810985-0f602a5a-c5ad-46e0-b5e2-855815de74da.png">
+</div>
+
+<div align="center">
  <img src="https://user-images.githubusercontent.com/62361708/225291005-6b6bf7df-50bf-48f6-acbe-d50772ee865a.png">
 </div>
 
