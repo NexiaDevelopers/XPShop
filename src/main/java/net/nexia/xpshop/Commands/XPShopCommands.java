@@ -9,7 +9,9 @@ import net.nexia.xpshop.Commands.Other.Autocompleters;
 import net.nexia.xpshop.GUI.Other.XPShopGUIEffects;
 import net.nexia.xpshop.GUI.XPShopGUI;
 import net.nexia.xpshop.Utilities.FileSetup;
+import net.nexia.xpshop.XPShop;
 import org.bukkit.GameMode;
+import org.bukkit.configuration.Configuration;
 import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.entity.Player;
@@ -24,6 +26,8 @@ import java.util.Objects;
 @CommandAlias("xpshop")
 public class XPShopCommands extends BaseCommand
 {
+
+    Configuration config = XPShop.getMain().getConfig();
 
     private final XPShopGUIEffects xpShopGUIEffects = new XPShopGUIEffects();
 
@@ -93,6 +97,13 @@ public class XPShopCommands extends BaseCommand
 
                 if (args[0].equals(section))
                 {
+                    //Failed to purchase due to permission
+                    if (config.getBoolean("PermissionBasedShop") && !player.hasPermission("net.nexia.xpshop." + section))
+                    {
+                        xpShopGUIEffects.failedToPurchase(player, "Permission");
+                        return;
+                    }
+
                     if (playerGamemode != GameMode.CREATIVE)
                     {
                         if (remainingXP >= 0)
@@ -101,7 +112,7 @@ public class XPShopCommands extends BaseCommand
                             Processes.giveToPlayer(player, item);
                         }
                         else
-                            xpShopGUIEffects.failedToPurchase(player);
+                            xpShopGUIEffects.failedToPurchase(player, "Cost");
                     }
                     else
                     {

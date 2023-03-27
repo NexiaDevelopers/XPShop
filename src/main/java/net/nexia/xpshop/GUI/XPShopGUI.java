@@ -84,7 +84,7 @@ public class XPShopGUI
                 item.setItemMeta(itemMeta);
 
                 //Button
-                xpShop.setButton(page, slot, xpShopGUIButton.button(item, player, itemCost));
+                xpShop.setButton(page, slot, xpShopGUIButton.button(item, player, itemCost, sections.get(i)));
 
                 //Change Page if GUI is full
                 if (i >= 45)

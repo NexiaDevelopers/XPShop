@@ -13,7 +13,7 @@ public class XPShopGUIEffects
         player.playSound(player.getLocation(), Sound.ENTITY_EXPERIENCE_ORB_PICKUP, 3.0f, 0.5f);
     }
 
-    public void failedToPurchase(Player player)
+    public void failedToPurchase(Player player, String failedType)
     {
         String version = Bukkit.getServer().getBukkitVersion().replace(".", "").split("-")[0];
         if (Integer.parseInt(version) >= 1140)  //For Versions 1.14 and up
@@ -21,7 +21,10 @@ public class XPShopGUIEffects
         else
             player.playSound(player.getLocation(), Sound.BLOCK_NOTE_BLOCK_BASEDRUM, 3.0f, 0.5f);
 
-        player.sendMessage(Processes.color("&cYou do not have enough &7XP &cto buy."));
+        if (failedType.equals("Cost"))
+            player.sendMessage(Processes.color("&cYou do not have enough &7XP &cto buy."));
+        else
+            player.sendMessage(Processes.color("&cYou do not have the necessary permission to buy."));
     }
 
 }
