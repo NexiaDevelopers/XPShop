@@ -45,16 +45,71 @@ many Sections in each File. We recommend grouping the items in each file by type
 <summary>config.yml</summary>
 <pre>
 
-    # MAIN SETTINGS
-    CreateExampleFiles: true    # Set whether the example files should be recreated if deleted. (WARNING: These get replaced each time the server restarts.)
-    PermissionBasedShop: false  # Set whether the shop should be permission based. Each item will require a permission in the syntax `net.nexia.xpshop.item`
+```yaml
+     # MAIN SETTINGS
+     CreateExampleFiles: true    # Set whether the example files should be recreated if deleted. (WARNING: These get replaced each time the server restarts.)
+     PermissionBasedShop: false  # Set whether the shop should be permission based. Each item will require a permission in the syntax `net.nexia.xpshop.item`
 
-    #   __  ______  ____  _
-    #   \ \/ /  _ \/ ___|| |__   ___  _ __
-    #    \  /| |_) \___ \| '_ \ / _ \| '_ \
-    #    /  \|  __/ ___) | | | | (_) | |_) |
-    #   /_/\_\_|   |____/|_| |_|\___/| .__/
-    #                                |_|
+     #   __  ______  ____  _
+     #   \ \/ /  _ \/ ___|| |__   ___  _ __
+     #    \  /| |_) \___ \| '_ \ / _ \| '_ \
+     #    /  \|  __/ ___) | | | | (_) | |_) |
+     #   /_/\_\_|   |____/|_| |_|\___/| .__/
+     #                                |_|
+```
+</pre>
+</details>
+
+<details>
+<summary>ExampleItems.yml</summary>
+<pre>
+
+```yaml
+    NexiaSword:
+        Item:
+            Type: 'DIAMOND_SWORD'
+            DisplayName: '&dNexia Sword'
+            Lore:
+                - '&aA sword that can cut'
+                - '&abetween universes.'
+            Enchants:
+                - UNBREAKING: 5
+                - SHARPNESS: 5
+                - FIRE_ASPECT: 1
+            ItemFlags:
+                - HIDE_ENCHANTS
+                - HIDE_ATTRIBUTES
+        Cost: 60
+
+    Stick:
+        Item:
+            Type: 'STICK'
+            DisplayName: '&dStick'
+            Lore:
+                - '&aJust a plain stick.'
+        Cost: 1
+
+    HeadMonitorsHead:
+        Item:
+            Type: 'PLAYER_HEAD'
+            DisplayName: "&dHeadMonitor's Head"
+            Lore:
+                - '&aHeadMonitor is the best'
+                - '&aplugin developer!'
+                - '&aGet him a cookie!'
+            Player: 'HeadMonitor'
+        Cost: 50
+
+    TexturedHead:
+      Item:
+        Type: 'PLAYER_HEAD'
+        DisplayName: '&dTextured Head'
+        Lore:
+          - '&aThis is a Head from'
+          - '&aa Custom Texture.'
+        Texture: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWU4OWI2YzRhYWMxNTZhMDQ4NmQ0OGFiN2JkN2RmMzA0NTg2YmQwYjllM2YxNTA5NTIxZWIxYmYzZmY2YmJkIn19fQ=='
+      Cost: 25
+```
 </pre>
 </details>
 
