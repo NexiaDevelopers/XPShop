@@ -5,7 +5,6 @@ import net.nexia.nexiaapi.Processes;
 import net.nexia.xpshop.XPShop;
 import org.bukkit.GameMode;
 import org.bukkit.configuration.Configuration;
-import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.entity.Player;
 import org.bukkit.event.inventory.ClickType;
 import org.bukkit.event.inventory.InventoryClickEvent;
@@ -21,6 +20,14 @@ public class XPShopGUIButton
 
     private final XPShopGUIEffects xpShopGUIEffects = new XPShopGUIEffects();
 
+    /**
+     * Creates the Button to be used on XPShopGUI.
+     * @param item The Item the button will be.
+     * @param player The Player that opened the XPShop.
+     * @param itemCost The Cost of the Item.
+     * @param section The Section of the Item in the yml file.
+     * @return Returns the Button.
+     */
     public SGButton button(ItemStack item, Player player, int itemCost, String section)
     {
         return new SGButton(item)

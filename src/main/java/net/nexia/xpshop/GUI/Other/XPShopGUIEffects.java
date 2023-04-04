@@ -8,11 +8,19 @@ import org.bukkit.entity.Player;
 public class XPShopGUIEffects
 {
 
+    /**
+     * The Effects that take place when a Purchase is successful.
+     * @param player The Player to play the Effects to.
+     */
     public void successfullyPurchased(Player player)
     {
         player.playSound(player.getLocation(), Sound.ENTITY_EXPERIENCE_ORB_PICKUP, 3.0f, 0.5f);
     }
 
+    /**
+     * The Effects that take place when a Purchase fails.
+     * @param player The Player to play the Effects to.
+     */
     public void failedToPurchase(Player player, String failedType)
     {
         String version = Bukkit.getServer().getBukkitVersion().replace(".", "").split("-")[0];

@@ -51,6 +51,12 @@ public class XPShopCommands extends BaseCommand
         xpShopGUI.openGUI(player);
     }
 
+    /**
+     * The /xpshop buy command.
+     * Lets the player buy an item from the XPShop directly.
+     * @param player The Player that executed the Command.
+     * @param args The Command arguments.
+     */
     @Subcommand("buy")
     @CommandPermission("net.nexia.xpshop.buy")
     @CommandCompletion("@xpshop-items")
@@ -81,7 +87,7 @@ public class XPShopCommands extends BaseCommand
                 {
                     if (Integer.parseInt(args[1]) > 6400)
                     {
-                        player.sendMessage(Processes.color("&cCan't give more than 6400 of &f[" + args[0] + "]&c."));
+                        player.sendMessage(Processes.color("&cCan't purchase more than 6400 of &f[" + args[0] + "]&c."));
                         return;
                     }
 

@@ -1,6 +1,7 @@
 package net.nexia.xpshop;
 
 import net.nexia.xpshop.Utilities.CommandRegistry;
+import net.nexia.xpshop.Utilities.EventRegistry;
 import net.nexia.xpshop.Utilities.FileSetup;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -18,6 +19,7 @@ public final class XPShop extends JavaPlugin
 
         //Utilities
         new CommandRegistry(this);
+        new EventRegistry(this);
         new FileSetup(this);
 
         //Config Access
