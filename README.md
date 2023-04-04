@@ -117,18 +117,18 @@ many Sections in each File. We recommend grouping the items in each file by type
  <img src="https://user-images.githubusercontent.com/62361708/225434090-dce1fb3c-9ff6-43e9-80c3-76ac800ad7f5.png">
 </div>
 
-You can get **Support**, **Request a Feature** or **Report a Bug** through the [Discussion](https://blank.org) tab or through our [Discord](https://blank.org). We will do our best to help you out!
+You can get **Support**, **Request a Feature** or **Report a Bug** through the [Discussion](https://www.spigotmc.org/threads/1-13-1-19-4-%E2%AD%90-xpshop-%E2%AD%90-shop-with-xp.599157/) tab or through our [Discord](https://discord.com/invite/ZfPq82BCM8). We will do our best to help you out!
 
 <div align="center">
  <img src="https://user-images.githubusercontent.com/62361708/225288503-a789afa0-4be5-4ff4-a83f-9d28c4dda1ed.png">
 </div>
 
 - **Q**: I don't exactly understand how to set the plugin up. Can you provide help? \
-  **A**: Yes! You can leave a comment on the [Discussion](https://blank.org) tab, or join our
-         [Discord](https://blank.org) server.
+  **A**: Yes! You can leave a comment on the [Discussion](https://www.spigotmc.org/threads/1-13-1-19-4-%E2%AD%90-xpshop-%E2%AD%90-shop-with-xp.599157/) tab, or join our
+         [Discord](https://discord.com/invite/ZfPq82BCM8) server.
 
 - **Q**: I have an issue, found a bug or want to request a feature. \
-  **A**: You can leave a comment on the [Discussion](https://blank.org) tab, or join our [Discord](https://blank.org) 
+  **A**: You can leave a comment on the [Discussion](https://www.spigotmc.org/threads/1-13-1-19-4-%E2%AD%90-xpshop-%E2%AD%90-shop-with-xp.599157/) tab, or join our [Discord](https://discord.com/invite/ZfPq82BCM8) 
          server.
          
 - **Q**: If I request a feature what are the chances of it being accepted? How long will it take to implement? \
