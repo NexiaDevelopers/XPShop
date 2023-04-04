@@ -27,10 +27,8 @@ import java.util.Objects;
 public class XPShopCommands extends BaseCommand
 {
 
-    Configuration config = XPShop.getMain().getConfig();
-
     private final XPShopGUIEffects xpShopGUIEffects = new XPShopGUIEffects();
-
+    Configuration config = XPShop.getMain().getConfig();
     Autocompleters autocompleters = new Autocompleters();
     XPShopGUI xpShopGUI = new XPShopGUI();
 
@@ -44,6 +42,7 @@ public class XPShopCommands extends BaseCommand
     /**
      * The default /xpshop command.
      * Opens the XPShop GUI.
+     *
      * @param player The Player to open the GUI to.
      */
     @Default
@@ -67,27 +66,31 @@ public class XPShopCommands extends BaseCommand
 
             for (String section : sections)
             {
+                //Invalid Usage
+                if (args.length < 2)
+                {
+                    player.sendMessage(Processes.color("&cInvalid usage. Use &7/xpshop buy <amount>&c."));
+                    return;
+                }
+
                 ConfigurationSection sectionInFile = yaml.getConfigurationSection(section);
                 if (sectionInFile == null) return;
 
-                int amountToBuy = 1;
-                if (args.length >= 2)
+                int amountToBuy;
+                try
                 {
-                    try
+                    if (Integer.parseInt(args[1]) > 6400)
                     {
-                        if (Integer.parseInt(args[1]) > 6400)
-                        {
-                            player.sendMessage(Processes.color("&cCan't give more than 6400 of &f[" + args[0] + "]&c."));
-                            return;
-                        }
-
-                        amountToBuy = Integer.parseInt(args[1]);
-                    }
-                    catch (NumberFormatException e)
-                    {
-                        player.sendMessage(Processes.color("&cExpected Integer for last argument."));
+                        player.sendMessage(Processes.color("&cCan't give more than 6400 of &f[" + args[0] + "]&c."));
                         return;
                     }
+
+                    amountToBuy = Integer.parseInt(args[1]);
+                }
+                catch (NumberFormatException e)
+                {
+                    player.sendMessage(Processes.color("&cExpected Integer for last argument."));
+                    return;
                 }
 
                 ItemStack item = ItemsFromFile.getItemFromSection(Objects.requireNonNull(sectionInFile.getConfigurationSection("Item")));
@@ -112,7 +115,10 @@ public class XPShopCommands extends BaseCommand
                             Processes.giveToPlayer(player, item);
                         }
                         else
+                        {
                             xpShopGUIEffects.failedToPurchase(player, "Cost");
+                            return;
+                        }
                     }
                     else
                     {

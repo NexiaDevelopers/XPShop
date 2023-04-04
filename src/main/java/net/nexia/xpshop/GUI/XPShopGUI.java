@@ -7,7 +7,6 @@ import net.nexia.nexiaapi.Processes;
 import net.nexia.xpshop.GUI.Other.XPShopGUIButton;
 import net.nexia.xpshop.Utilities.FileSetup;
 import net.nexia.xpshop.XPShop;
-import org.bukkit.Bukkit;
 import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.entity.Player;
@@ -45,23 +44,29 @@ public class XPShopGUI
             return;
         }
 
+        int page = 0;
+        int slot = 10;
         for (File f : itemFiles)
         {
             YamlConfiguration yaml = YamlConfiguration.loadConfiguration(f);
             List<String> sections = new ArrayList<>(yaml.getKeys(false));
 
-            int page = 0;
-            int slot = 10;
             List<Integer> slotsToSkip = Arrays.asList(17, 18, 26, 27, 35, 36); //Slots to skip in order for Buttons to be centered
             for (int i = 0; i < sections.size(); i++)
             {
                 //Centering Buttons
                 if (slotsToSkip.contains(slot))
                 {
-                    Bukkit.broadcastMessage("test");
                     i--;
                     slot++;
                     continue;
+                }
+
+                //Change Page if GUI is full
+                if (slot >= 44)
+                {
+                    slot = 10;
+                    page++;
                 }
 
                 ConfigurationSection itemSection = yaml.getConfigurationSection(sections.get(i) + ".Item");
@@ -85,13 +90,6 @@ public class XPShopGUI
 
                 //Button
                 xpShop.setButton(page, slot, xpShopGUIButton.button(item, player, itemCost, sections.get(i)));
-
-                //Change Page if GUI is full
-                if (i >= 45)
-                {
-                    slot = 0;
-                    page++;
-                }
 
                 slot++;
             }
