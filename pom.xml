@@ -6,7 +6,7 @@
 
     <groupId>net.nexia</groupId>
     <artifactId>XPShop</artifactId>
-    <version>1.0.2</version>
+    <version>1.0.3</version>
     <packaging>jar</packaging>
 
     <name>XPShop</name>
@@ -99,7 +99,7 @@
         <dependency>
             <groupId>com.github.NexiaDevelopers</groupId>
             <artifactId>NexiaAPI</artifactId>
-            <version>1.2.0</version>
+            <version>1.2.1</version>
         </dependency>
 
         <dependency>
