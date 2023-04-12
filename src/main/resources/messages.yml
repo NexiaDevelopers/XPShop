@@ -1,0 +1,9 @@
+XPShopGeneral:
+  FailedToBuyCost: '&cYou do not have enough &7XP &cto buy.'
+  FailedToBuyPermission: '&cYou do not have the necessary permission to buy.'
+
+XPShopCommands:
+  Buy:
+    InvalidUsage: '&cInvalid usage. Use &7/xpshop buy <amount>&c.'
+    TooManyItems: '&cCan't purchase more than 6400 of &f[{item}]&c.'
+    InvalidAmount: '&cExpected Integer for last argument.'

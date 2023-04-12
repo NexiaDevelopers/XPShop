@@ -32,7 +32,6 @@ public class XPShopCommands extends BaseCommand
     Autocompleters autocompleters = new Autocompleters();
     XPShopGUI xpShopGUI = new XPShopGUI();
 
-
     public XPShopCommands(BukkitCommandManager manager)
     {
         //Map Art Autocompleters
