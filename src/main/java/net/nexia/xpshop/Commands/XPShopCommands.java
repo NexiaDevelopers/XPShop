@@ -91,6 +91,10 @@ public class XPShopCommands extends BaseCommand
                     }
 
                     amountToBuy = Integer.parseInt(args[1]);
+                    if (amountToBuy <= 0) {
+                        player.sendMessage(Processes.color("&cAmount that can be bought must be more than 0"));
+                        return;
+                    }
                 }
                 catch (NumberFormatException e)
                 {
